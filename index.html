@@ -8,5 +8,25 @@
 </head>
 <body>
     
+    <form action="" name="dados">
+       <p> Insira o seu nome: <input type="text" name="nome" id=""></p>
+    <p>Informe a data de nascimento: <input type="date" name="date" id=""></p>
+    <p>Insira a senha: <input type="password" name="senha" id=""></p>
+    <input type="button" value="Criar" onclick="imprimirValores()">
+    </form>
+
+
+
 </body>
+<script>
+    function imprimirValores(){
+        let nome = document.dados.nome.value
+        let data = document.dados.date.value
+
+        let nomeData = (nome +" \n"+data)
+
+        document.write(nomeData)
+
+    }
+</script>
 </html>
